@@ -6,10 +6,10 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Optional;
 
-public class CacheAgendaDAO implements AgendaDAO {
+public class CacheAgendaDAO implements DAO {
 
     private static Map<Long, Contact> cachedContacts = new HashMap<>();
-    private AgendaDAOImpl agendaDAOIml;
+    private DAO agendaDAOIml;
 
     public CacheAgendaDAO(AgendaDAOImpl agendaDAOIml) {
         this.agendaDAOIml = agendaDAOIml;

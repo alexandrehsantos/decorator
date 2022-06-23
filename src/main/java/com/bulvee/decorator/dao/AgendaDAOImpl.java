@@ -11,7 +11,7 @@ import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
 
-public class AgendaDAOImpl implements AgendaDAO {
+public class AgendaDAOImpl implements DAO {
 
     private String dataFileName;
 
